@@ -8,7 +8,7 @@
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
 			<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
-
+<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/material.min.css')}}">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 			<script type="text/javascript" src="{{url_for('static', filename='JQuery/jquery.js')}}"></script>
@@ -109,40 +109,34 @@
 
 	<body>
 
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>
 
+			<main class="mdl-layout__content">
+			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue" id="title1"> 
+              <span class="mdl-layout-title" id=""title1">Universal Font Converter</span> 
+          </div> 
+		  <a class="divider"></a>
+          <div class="mdl-layout__header-row"> 
+              <span class="mdl-layout-title">
+			  <ul id="dropdown1" class="dropdown-content">
+				<li><a href="{{url_for('wintouni')}}">Win to Uni</a><hr></li>
+				<li><a href="{{url_for('unitowin')}}">Uni to Win</a><hr></li>
+				<li><a href="{{url_for('unitozawgyi')}}">Uni to Zawgyi<hr></a></li>
+				<li><a href="{{url_for('zawgyitouni')}}">Zawgyi to Uni</a><hr></li>
+				<li><a href="{{url_for('wintozawgyi')}}">Win to Zawgyi</a><hr></li>
+				<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to Win</a><hr></li>
+				</ul>
+		   <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
+				 		   <a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp; 
+							Unicode to Win &nbsp;&nbsp;&nbsp;</a></li>	
+						
+				</div>
+			</span> 
+         </div> 
 
-		<ul id="dropdown1" class="dropdown-content">
-
-			<li><a href="{{url_for('home')}}">Unicode to Zawgyi</a></li>
-
-			<li><a href="{{url_for('zawgyitouni')}}">Zawgyi to Unicode</a></li>
-
-			<li><a href="{{url_for('wintouni')}}">WinInnwa to Unicode</a></li>
-
-			<li><a href="{{url_for('unitowin')}}">Unicode to WinInnwa</a></li>
-
-			<li><a href="{{url_for('wintozawgyi')}}">WinInnwa to Zawgyi</a></li>
-
-			<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to WinInnwa</a></li>
-
-		</ul>
-
-		<nav>
-
-			<div class="nav-wrapper">
-
-				<a href="{{url_for('firstpage')}}" class="brand-logo">Universal Font Converter</a>
-
-					<br>
-					<br>
-				<a class="dropdown-trigger brand-logo" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp;Unicode to Zawgyi&nbsp;&nbsp;&nbsp;<i class="material-icons right">arrow_drop_down</i></a>
-				
-				<a  href="{{url_for('home')}}" class"brand-logo">Home</a>
-					
-
-			</div>
-
-		</nav>
 		<br><br><br><br>
     <div class="row">
       <form class="col s12">
@@ -245,6 +239,7 @@
 		<!--JavaScript at end of body for optimized loading-->
 
 		<script type="text/javascript" src="{{url_for('static',filename='js/materialize.min.js')}}"></script>
+		<script type="text/javascript" src="{{url_for('static',filename='js/material.min.js')}}"></script>
 
     </body>
 
