@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-
 <html>
-
-	<head>
-
-			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <head>      
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  
+		  <link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
 
 			<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
@@ -21,251 +21,194 @@
 							font-weight: normal;
 							font-style: normal;
 							font-size: 50px;
-					}
-				.footer-copyright
-					{
-						background-color:#424242;
-					}
-				.page-footer
-					{
-						background-color:#616161;
-					}
-
-				body
-					{
-						display: flex;
-						min-height: 100vh;
-						flex-direction: column;
-					}
-
-				main
-					{
-						flex: 1 0 auto;
-					}
-
-
-				nav{
-					background-color:#03a9f4;
-					}
-						.waves-effect
-	{
-	background-color:#795548;
-	margin-left:500px;
-
-	}
-	#button2
-    {
-		margin-left:330px;
-		background-color:#795548;
-	}
-	#button1
-	{
-	margin-left:40px;
-	}
-
-		.mdl-layout__header-row
+					}			
+			.demo-layout-transparent .mdl-layout__header,.demo-layout-transparent .mdl-layout__drawer-button 
 				{
-				display:-webkit-flex;display:-ms-flexbox;
-				display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;
-				flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;box-sizing:border-box;-webkit-align-self:stretch;-ms-flex-item-align:stretch;align-self:stretch;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:64px;margin:0;
-				padding:0 0px 0 0px;
-				background-color:#03a9f4;
+					/* This background is dark, so we set text to white. Use 87% black instead if
+					your background is light. */
+					color: white;
 				}
-	#myinput,#output
-
-	{
-
-    background-color:#e0f2f1 ;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-	overflow:scroll;
-	padding: 20px;
-    border: 1px solid rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
-    -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
-	resize: vertical;
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
-	height:300px;
-	width:500px;
-  }
-#hello
+			#title1
+				{
+					font-size:25px;
+				}
+				.mdl-navigation__link
+				{
+					 color:#000000;
+					 text-decoration:middle;
+					 font-size:18px;
+					 line-height:10px;
+					 letter-spacing:0;
+					 padding-bottom:
+					 padding-top:10px;
+				}
+			#hello
 				{
 				width:1800px;
 				}
 				#hello1
 				{
-				background-color:#03a9f4;
+				background-color:#880e4f;
 				margin-left:100px:
 				margin-right:500px;
 				}
 				.mdl-layout__header-row
 				{
-				background-color:#2196f3;
+				background-color:#880e4f;
 				}
-				.mdl-layout__title,.mdl-layout-title
-			{
-			display:block;
-			position:relative;
-			font-family:"Roboto","Helvetica","Arial",sans-serif;
-			font-size:25px;line-height:1;letter-spacing:.02em;
-			font-weight:500;box-sizing:border-box;
-			color:black;
-			margin:0;
-			}
 
-	</style>
-
+			.btn-large
+				{
+					background-color:black;
+				}
+			body 
+				{
+					display: flex;
+					min-height: 100vh;
+					flex-direction: column;
+				}
+			main 
+				{
+					flex: 1 0 auto;
+				}
+			#myinput,#output
+				{
+					background-color:#e0f2f1 ;
+					-moz-border-radius: 4px;
+					-webkit-border-radius: 4px;
+					border-radius: 4px;
+					overflow:scroll;
+					padding: 20px;
+					border: 1px solid rgba(0,0,0,0.15);
+					-moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
+					-webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
+					box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
+					height:300px;
+					width:500px;
+				}
+			
+			.mdl-mega-footer
+				{
+					background-color:#880e4f;
+				}
+	</style>		
     <script>
-
+	
 		$(document).ready(function()
 			{
-
+			
 			$(".dropdown-trigger").dropdown();
-
+			
 			});
-
-
+			
+			
+		
+		
+			
     </script>
-
-
-</head>
-
-	<body>
-	<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>
+	</head>
+	<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>
 			
 			<main class="mdl-layout__content">
 			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--pink-900"> 
               <span class="mdl-layout-title">Universal Font Converter</span> 
           </div> 
-          
+          <div class="mdl-layout__header-row"> 
+		  <hr>
               <span class="mdl-layout-title">
 			  <ul id="dropdown1" class="dropdown-content">
 				<li><a href="{{url_for('wintouni')}}">Win to Uni</a></li>
-				<li class="divider"></li>
 				<li><a href="{{url_for('unitowin')}}">Uni to Win</a></li>
-				<li class="divider"></li>
-				<li><a href="{{url_for('home')}}">Uni to Zawgyi</a></li>
-				<li class="divider"></li>
+				<li><a href="{{url_for('unitozawgyi')}}">Uni to Zawgyi</a></li>
 				<li><a href="{{url_for('zawgyitouni')}}">Zawgyi to Uni</a></li>
-				<li class="divider"></li>
 				<li><a href="{{url_for('wintozawgyi')}}">Win to Zawgyi</a></li>
-				<li class="divider"></li>
 				<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to Win</a></li>	
 		   </ul>
 		   <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--pink-900" id="hello">
-		   <hr>
 				 		   <a class="mdl-navigation__link" href="{{url_for('firstpage')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp; 
-							Unicode to Zawgyi &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;</a></li>	
+							Unicode to Zawgyi  &nbsp;&nbsp;&nbsp;</a></li>	
 						
 				</div>
 			</span> 
-         
+         </div> 
 				<div class="page-content">
-
-
-    <div class="row">
+				 <div class="row">
       <form class="col s12">
         <div class="row">
           <div class="input-field col s6">
             <textarea id="myinput"></textarea>
-            <label for="myinput">Zawgyi</label>
+            <label for="myinput">Unicode</label>
           </div>
 
 
           <div class="input-field col s6">
             <textarea id="output"></textarea>
-            <label for="output">Unicode</label>
+            <label for="output">Zawgyi</label>
           </div>
         </div>
-
-		<button type="submit" class="waves-effect btn-large z-depth-0"id="button2">Convert</button>
-		<button type="reset" class="waves-effect btn-large z-depth-0" id="button1">Clear</button>
+		<!-- <a type="submit" class="waves-effect waves-light btn-large">Convert</a> -->
+		<button type="submit" class="waves-effect btn-large z-depth-0" id="button1" >Convert</button>
+		<button type="reset" class="waves-effect btn-large z-depth-0" id="button2">Clear</button>
+		<!-- <input type="submit" value="Convert" class="waves-effect btn-large z-depth-0">
+		<input type="reset" value="Clear  " class="waves-effect btn-large z-depth-0" id="button1"> -->
       </form>
-  	  	</div>
-		<footer class="page-footer">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col s3">
-
-						<h5 class="white-text">Features</h5>
-							<ul>
-								  <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
-
-								  <li><a class="grey-text text-lighten-3" href="partners.html">Partners</a></li>
-
-								  <li><a class="grey-text text-lighten-3" href="terms.html">Terms</a></li>
-
-							</ul>
-					</div>
-
-					<div class="col  s3">
-
-						<h5 class="white-text">Details</h5>
-							<ul>
-								  <li><a class="grey-text text-lighten-3" href="resources.html">Resource</a></li>
-
-								  <li><a class="grey-text text-lighten-3" href="tools.html">Tools</a></li>
-
-								  <li><a class="grey-text text-lighten-3" href="specs.html">Specs</a></li>
-
-							</ul>
-					</div>
-
-					<div class="col  s3">
-
-						<h5 class="white-text">Technology</h5>
-							<ul>
-								  <li><a class="grey-text text-lighten-3" href="howitwork.html">How it work</a></li>
-
-								  <li><a class="grey-text text-lighten-3" href="pattterns.html">Patterns</a></li>
-
-								  <li><a class="grey-text text-lighten-3" href="usage.html">Usage</a></li>
-
-							</ul>
-					</div>
-
-					<div class="col s3">
-
-						<h5 class="white-text">FAQ</h5>
-							<ul>
-								  <li><a class="grey-text text-lighten-3" href="questions.html">Questions</a></li>
-
-								  <li><a class="grey-text text-lighten-3" href="answers.html">Answers</a></li>
-
-								  <li><a class="grey-text text-lighten-3" href="contactus.html">Contact Us</a></li>
-
-							</ul>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="footer-copyright">
-
-				<div class="container">
-
-					@ 2018 CUMDY Interns
-
-						<a class="grey-text text-lighten-4 right">Goe-Hope Team</a>
-
-				</div>
-
-			</div>
-
-		</footer>
-
-</div>
-</main>
-		<!--JavaScript at end of body for optimized loading-->
-
-		<script type="text/javascript" src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
-
-    </body>
-
+  	 </div>
+				
+					<footer class="mdl-mega-footer">
+						<div class="mdl-mega-footer--middle-section">
+							<div class="mdl-mega-footer--drop-down-section">
+								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+									<h1 class="mdl-mega-footer--heading">Features</h1>
+									<ul class="mdl-mega-footer--link-list">
+										<li><a href="about.html">About</a></li>
+										<li><a href="terms.html">Terms</a></li>
+										<li><a href="partners.html">Partners</a></li>
+										<li><a href="updates.html">Updates</a></li>
+									</ul>
+							</div>
+							<div class="mdl-mega-footer--drop-down-section">
+								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+									<h1 class="mdl-mega-footer--heading">Details</h1>
+									<ul class="mdl-mega-footer--link-list">
+										<li><a href="spec.html">Spec</a></li>
+										<li><a href="tools.html">Tools</a></li>
+										<li><a href="resource.html">Resources</a></li>
+									</ul>
+							</div>
+							<div class="mdl-mega-footer--drop-down-section">
+								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+									<h1 class="mdl-mega-footer--heading">Technology</h1>
+									<ul class="mdl-mega-footer--link-list">
+										<li><a href="howitwork.html">How it works</a></li>
+										<li><a href="patterns.html">Patterns</a></li>
+										<li><a href="usage.html">Usage</a></li>
+										<li><a href="product.html">Products</a></li>
+										<li><a href="contract.html">Contracts</a></li>
+									</ul>
+							</div>
+							<div class="mdl-mega-footer--drop-down-section">
+								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+									<h1 class="mdl-mega-footer--heading">FAQ</h1>
+									<ul class="mdl-mega-footer--link-list">
+										<li><a href="questions.html">Questions</a></li>
+										<li><a href="answer.html">Answers</a></li>
+										<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-copyright">
+							<div class="container">
+								@ 2018 CUMDY Interns
+								<a class="grey-text text-lighten-4 right">Goe-Hope Team</a>
+							</div>
+						</div>
+			</footer>
+		</div>
+	</main>
+	<script src="{{url_for('static',filename='js/material.min.js')}}" ></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/materialize.js')}}"></script>
+	</body>
 </html>
