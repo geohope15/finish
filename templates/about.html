@@ -26,11 +26,43 @@
            nav 
             { 
              background-color: black ; 
-           } 
+           } .mdl-layout__title,.mdl-layout-title
+				{
+					display:block;
+					position:relative;
+					font-family:"Roboto","Helvetica","Arial",sans-serif;
+					font-size:30px;line-height:1;letter-spacing:.02em;
+					font-weight:500;
+					box-sizing:border-box;
+					color:white;
+					margin:0;
+					padding: 0 0 0 0;
+
+				}
+			.mdl-navigation__link 
+				{
+				  display: block;
+				  color:white;
+				  line-height: 64px;
+				  padding: 0 0px;
+				  font-size:18px;
+				}
 </style> 
 
    </head> 
-                  <main class="mdl-layout__content"> 
+        <div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>	
+			<main class="mdl-layout__content">
+			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue"> 
+              <span class="mdl-layout-title">About</span> 
+            </div> 
+              <span class="mdl-layout-title">
+		
+		  <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
+		   
+			<a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>
+						
+		</div>
+	</span> 
           <table class="highlight" border="" height="100%" width="100%"> 
          <thead> 
            <tr> 
