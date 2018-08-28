@@ -37,10 +37,12 @@
  
          </div> 
           <div class="mdl-layout__header-row"> 
-           <span class="mdl-layout-title">Geo_Gold_Team</span> 
+           <span class="mdl-layout-title"></span> 
          <div class="mdl-layout-spacer"></div> 
            <nav class="mdl-navigation mdl-layout--large-screen-only" style="background-color: rgb(63,81,181);"> 
-           <a href="new.html" class="is-active mdl-navigation"><i class="large material-icons">home</i></a> 
+           <a href="{{url_for('home')}}" class="is-active mdl-navigation">Home</i></a> 
+		   <a href="{{url_for('home')}}" class="is-active mdl-navigation">About</i></a> 
+		   <br>
         </nav>  
         </div> 
      </header> 
