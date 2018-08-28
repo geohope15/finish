@@ -7,7 +7,7 @@ import Uni_To_Win
 app = Flask(__name__)
 
 @app.route("/unitozawgyi")
-def home():
+def unitozawgyi():
     return render_template("unitozawgyi.html")
 	
 @app.route("/about")
