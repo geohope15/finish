@@ -6,9 +6,9 @@ import Win_To_Uni
 import Uni_To_Win
 app = Flask(__name__)
 
-@app.route("/unitozawgyi")
-def unitozawgyi():
-    return render_template("unitozawgyi.html")
+@app.route("/")
+def home():
+    return render_template("index.html")
 	
 @app.route("/about")
 def about():
@@ -91,9 +91,9 @@ def convert5():
         return jsonify({'output': output})
     return jsonify({'output': "Plz write or paste text in input textarea"})
 
-@app.route("/")
-def home():
-    return render_template("index.html")
+@app.route("/unitoOAzawgyi")
+def unitozawgyi():
+    return render_template("unitozawgyi.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
